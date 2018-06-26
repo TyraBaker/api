@@ -1,0 +1,56 @@
+/* CSS used for style/look */
+/* can be linked to html by class or id */
+    /* class --> multiple elements styled the same */
+    /* id --> style 1 element */
+
+body {
+    font-size: 20px;
+        /* applies to text on page with unspecified size */
+        /* does not apply to buttons with .button {} present */
+    background-color: gray;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    }
+
+    .button{
+        /* padding-top: 50px;
+        padding-bottom: 50px;
+        padding-right: 50px;
+        padding-left: 50px; */
+            /* or */
+        padding: 50px 50px 50px 50px;
+            /* top right bottom left */
+            /* padding: 50px; would suggest padding on all sides */
+        border: 3px solid white;
+        border-radius: 8px;
+        margin: 15px 10px 15px 10px;
+        height: 200px; 
+        width: 300px;
+        background-color: #113111;
+        color: white;
+        font-size: 20px;
+        font-family: verdana, geneva, tahoma, sans-serif;
+
+        /* different border types like dotted and dashed */
+        /* colors can be selected from options, by typing color, or on a color-picker */
+    }
+
+    #cancel{
+        background-color: white;
+        border: 3px solid black;
+        color: black;
+
+    }
+
+    .text{
+        color: darkblue;
+    }
+    .otherText{
+        font-size: 12px;
+    }
+
+    #note{
+        color: black;
+        font-size: 12px;
+    }
+    /* "#" is id. "." is class. */

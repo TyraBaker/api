@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DOM</title>
+</head>
+<body>
+    
+
+<h1>Hello World!</h1>
+<p id="test">This is some sample text.</p>
+    <script type="text/javascript">
+        var test = document.getElementById("test");
+        console.log(test.style.color);
+        test.style.color="blue";
+        console.log(test.style.color);
+        test.innerText = "Yo, it's a different text.";
+        test.innerHTML="<button>I am a button</button>";
+        </script>
+      </body>
+      </html>  

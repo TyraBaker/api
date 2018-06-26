@@ -1,0 +1,18 @@
+.wrapper {
+    margin: 5px;
+}
+.nav {
+    position: fixed;
+            /* fixed positions remain in place even when the screen is scrolled, etc... */
+    top: 0;
+    right: 0;
+    width: 250px;
+    border: 5px solid black;
+    color: rgb(135, 53, 230);
+    font-weight: bold;
+    text-align: center;
+}  
+
+
+        /* "z-index" brings components forward (or behind) to edit stacking order when overlap occurs. */
+        /* highest z-index is the front-most component. */
