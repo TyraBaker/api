@@ -16,8 +16,8 @@ body {
 form p:nth-of-type(1) {
     margin-top: 0;
 }
-
-h1 {
+ 
+h1 { 
     text-align: center;
 }
 
@@ -25,7 +25,7 @@ h1 {
     font-size: 20px;
 } */
 
-article p {
+/* article p {
     font-size: 14px;
     line-height: 1.5;
 }
@@ -37,15 +37,17 @@ article p:nth-of-type(2) {
 
 nav {
     margin-bottom: 50px;
-}
-
+} */
+/* 
 .prev {
     float: left;
 }
 
 .next {
     float: right;
-}
+} */
+
+
 
 /* article {
     padding: 10px;
@@ -54,6 +56,9 @@ nav {
     border: 1px solid #ccc; 
 } */
 
+
+
+/* 
 img {
     float: right;
     margin-left: 20px;
@@ -68,4 +73,4 @@ span {
     background-color: #ccc;
     padding: 5px;
     margin: 5px;
-}
+} */
