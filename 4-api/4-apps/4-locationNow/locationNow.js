@@ -15,7 +15,7 @@ const baseURL = 'https://api.foursquare.com/v2/venues/search?near=Indianapolis&c
 const searchForm = document.querySelector('form');
 const submitBtn = document.querySelector('.submit');
 const section = document.querySelector('section');
- 
+
 
 searchForm.addEventListener('submit', fetchResults);
 function fetchResults(e) {
@@ -37,22 +37,40 @@ function fetchResults(e) {
 };
 
 
-
-
+// function displayResults(json) {
+  
 
 function displayResults(results) {
+    while (section.firstChild) {
+        section.removeChild(section.firstChild);
+    }
     for (venue of results.response.venues) {
         //1 create HTML elements for what you want
         let venueName = document.createElement('h2')
+        let venueLocation = document.createElement('h3')
+        let venueCity = document.createElement('h3')
+      
 
 
 
         //2 add text content or src/href to the element from the api result
         venueName.textContent = venue.name;
+        venueLocation.textContent = venue.location.address;
+        venueCity.textContent = venue.location.city;
 
 
 
         //3 append to HTML
         section.appendChild(venueName)
+        section.appendChild(venueLocation)
+        section.appendChild(venueCity)
+
+       
     }
 }
+
+// function displayResults(json) {
+//     while (section.firstChild) {
+//         section.removeChild(section.firstChild);
+
+
